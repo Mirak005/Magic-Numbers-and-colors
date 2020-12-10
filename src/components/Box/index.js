@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 export default function Box({ number, color }) {
   return (
     <svg
-      className="container"
       height="50"
       width="50"
       style={{
