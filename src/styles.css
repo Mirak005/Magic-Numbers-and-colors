@@ -1,0 +1,63 @@
+:root {
+  --primary: rgb(46, 118, 146);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+form {
+  padding: 1rem;
+}
+
+form > input {
+  outline: 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 0.5px solid rgba(0, 0, 0, 0.308);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*GENERAL BUTTONS STYLES */
+
+.btn {
+  cursor: pointer;
+  outline: 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  box-shadow: 2px 2px 8px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  color: white;
+  background: var(--primary);
+}
