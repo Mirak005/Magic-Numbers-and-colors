@@ -11,7 +11,7 @@ export default function Box({ number, color }) {
         background: color,
         margin: "1px",
         textAlign: "center",
-        borderRadius: "5px"
+        borderRadius: "5px",
       }}
     >
       <text
@@ -30,5 +30,5 @@ export default function Box({ number, color }) {
 
 Box.propTypes = {
   color: PropTypes.string.isRequired,
-  number: PropTypes.number.isRequired
+  number: PropTypes.number.isRequired,
 };

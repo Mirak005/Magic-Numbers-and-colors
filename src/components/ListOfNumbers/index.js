@@ -16,7 +16,7 @@ export default function ListOfNumbers({ boxes }) {
       </button>
       <div>
         {[...boxes]
-          .sort((c, n) => (sorted ? 0 : c.number - n.number))
+          .sort((c, n) => (sorted ? c.number - n.number : 0))
           .map(({ color, number }, i) => (
             <Box key={i} number={number} color={color} />
           ))}
@@ -26,5 +26,5 @@ export default function ListOfNumbers({ boxes }) {
 }
 
 ListOfNumbers.propTypes = {
-  boxes: PropTypes.arrayOf(PropTypes.object).isRequired
+  boxes: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
