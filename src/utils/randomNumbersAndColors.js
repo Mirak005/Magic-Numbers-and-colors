@@ -21,6 +21,7 @@ all negative values refers to the pourcentage of the green
 
 export default function randomNumbersAndColors(x, min, max) {
   let result = [];
+  //potential infinite loop !!!
   // while (result.length < x) {
   //   let random = randomNumberBetween(min, max);
   //   if (result.indexOf(random) < 0) {
@@ -29,10 +30,7 @@ export default function randomNumbersAndColors(x, min, max) {
   // }
 
   for (let i = 0; i < x; i++) {
-    let random = randomNumberBetween(min, max);
-    if (result.indexOf(random) < 0) {
-      result.push(random);
-    }
+      result.push(randomNumberBetween(min, max)); 
   }
 
   return converToArrayOfBoxes(pourcentageToRgb(result), result);
